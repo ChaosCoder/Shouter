@@ -9,5 +9,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
   s.source       = { :git => "https://github.com/ChaosCoder/Shouter.git", :tag => s.version }
   s.source_files  = "Shouter/*.swift"
+  s.swift_version = "4.2"
   s.requires_arc = true
 end
