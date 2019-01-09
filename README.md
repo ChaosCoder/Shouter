@@ -58,3 +58,8 @@ CocoaPods:
 ~~~
 pod 'Shouter', :git => 'https://github.com/ChaosCoder/Shouter.git'
 ~~~
+
+## Acknowledgments
+
+*Shouter* was inspired and partially based on the library [100mango/SwiftNotificationCenter](https://github.com/100mango/SwiftNotificationCenter).
+The logo is based on the "[Broadcast](https://thenounproject.com/term/broadcast/78458/)" icon by [Amy Chiang](https://thenounproject.com/amyc/) from [the Noun Project](http://thenounproject.com/).
