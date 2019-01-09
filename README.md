@@ -1,5 +1,5 @@
-[![](logo.png)]()
-[![](http://img.shields.io/badge/Swift-4.2-blue.svg)]() [![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]() [![](https://img.shields.io/github/license/ChaosCoder/Shout.svg)]()
+![](logo.png)
+![](http://img.shields.io/badge/Swift-4.2-blue.svg) ![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg) ![](https://img.shields.io/github/license/ChaosCoder/Shouter.svg) ![](https://img.shields.io/bitrise/83adcb765d1ad6e0/master.svg?token=Ma5TqbEQTa5zaE6Q0k6tVw)
 
 **Shouter** is a simple, safe, lightweight way for one-to-many communication. It is a type, memory and thread safe alternative for NotificationCenter.
 
