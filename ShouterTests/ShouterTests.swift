@@ -9,7 +9,7 @@
 import XCTest
 @testable import Shouter
 
-class ShoutTests: XCTestCase {
+class ShouterTests: XCTestCase {
 
     func testNotify() {
         let shouter = Shouter.default

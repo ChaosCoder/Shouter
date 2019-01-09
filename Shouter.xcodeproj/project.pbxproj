@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7DCA266A21E60E2D0084A985 /* Shouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA266921E60E2D0084A985 /* Shouter.swift */; };
 		DB7989961CDB2C8A00419114 /* Shouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB79898B1CDB2C8A00419114 /* Shouter.framework */; };
-		DB79899B1CDB2C8A00419114 /* ShoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB79899A1CDB2C8A00419114 /* ShoutTests.swift */; };
+		DB79899B1CDB2C8A00419114 /* ShouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB79899A1CDB2C8A00419114 /* ShouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +27,7 @@
 		DB79898B1CDB2C8A00419114 /* Shouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7989901CDB2C8A00419114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7989951CDB2C8A00419114 /* ShouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB79899A1CDB2C8A00419114 /* ShoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutTests.swift; sourceTree = "<group>"; };
+		DB79899A1CDB2C8A00419114 /* ShouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouterTests.swift; sourceTree = "<group>"; };
 		DB79899C1CDB2C8A00419114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 		DB7989991CDB2C8A00419114 /* ShouterTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB79899A1CDB2C8A00419114 /* ShoutTests.swift */,
+				DB79899A1CDB2C8A00419114 /* ShouterTests.swift */,
 				DB79899C1CDB2C8A00419114 /* Info.plist */,
 			);
 			path = ShouterTests;
@@ -152,6 +152,7 @@
 					DB7989941CDB2C8A00419114 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -203,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB79899B1CDB2C8A00419114 /* ShoutTests.swift in Sources */,
+				DB79899B1CDB2C8A00419114 /* ShouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,10 +375,14 @@
 		DB7989A31CDB2C8A00419114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ShouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.chaosspace.ShouterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
@@ -386,10 +391,14 @@
 		DB7989A41CDB2C8A00419114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ShouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.chaosspace.ShouterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
