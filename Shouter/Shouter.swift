@@ -8,7 +8,17 @@
 
 import Foundation
 
-public class Shouter {
+public protocol Notifier {
+    func notify<T>(_ type: T.Type, block: (T) -> Void)
+}
+
+public protocol NotificationRegistry {
+    func register<T>(_ type: T.Type, observer: T)
+    func unregister<T>(_ type: T.Type, observer: T)
+    func unregister<T>(_ type: T.Type)
+}
+
+public class Shouter: Notifier, NotificationRegistry {
     
     public static let `default` = Shouter()
     
@@ -47,7 +57,7 @@ public class Shouter {
         }
     }
     
-    public func notify<T>(_ type: T.Type, block: (T) -> Void ) {
+    public func notify<T>(_ type: T.Type, block: (T) -> Void) {
         let key = self.key(for: type)
         guard let observers = self.observers[key] else { return }
         
