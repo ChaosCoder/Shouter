@@ -12,7 +12,7 @@ import XCTest
 class ShouterTests: XCTestCase {
 
     func testNotify() {
-        let shouter = Shouter.default
+        let shouter = Shouter()
         
         let object = MockClass()
         shouter.register(MockProtocol.self, observer: object)
@@ -26,7 +26,7 @@ class ShouterTests: XCTestCase {
     }
     
     func testRemove() {
-        let shouter = Shouter.default
+        let shouter = Shouter()
         
         let expectation = self.expectation(description: "Notify closure must not be called")
         expectation.isInverted = true
@@ -43,7 +43,7 @@ class ShouterTests: XCTestCase {
     }
     
     func testRemoveWhileNotifying() {
-        let shouter = Shouter.default
+        let shouter = Shouter()
         
         let expected = self.expectation(description: "Notify closure should be called")
         let notExpected = self.expectation(description: "Notify closure must not be called")
