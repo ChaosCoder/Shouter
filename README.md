@@ -1,4 +1,4 @@
-![](logo.png)
+![](https://github.com/ChaosCoder/Shouter/raw/master/logo.png)
 [![](http://img.shields.io/badge/Swift-4.2-blue.svg)]() [![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]() [![](https://img.shields.io/github/license/ChaosCoder/Shouter.svg)](LICENSE.md) [![](https://img.shields.io/bitrise/83adcb765d1ad6e0/master.svg?token=Ma5TqbEQTa5zaE6Q0k6tVw)](https://app.bitrise.io/app/83adcb765d1ad6e0)
 
 **Shouter** is a simple, safe, lightweight way for one-to-many communication. It is a type, memory and thread safe alternative for NotificationCenter.
@@ -20,7 +20,7 @@ class ViewController: UIViewController { /* ... */ }
 
 extension ViewController: SomeNotification {
   func somethingHappened(value: String) {
-    self.titleLabel.text = "Something Happened: \(value)"
+    self.titleLabel.text = "Something happened: \(value)"
   }
 }
 ~~~
@@ -61,5 +61,5 @@ pod 'Shouter', :git => 'https://github.com/ChaosCoder/Shouter.git'
 
 ## Acknowledgments
 
-*Shouter* was inspired and partially based on the library [100mango/SwiftNotificationCenter](https://github.com/100mango/SwiftNotificationCenter).
+*Shouter* was inspired and partially based on the library [100mango/SwiftNotificationCenter](https://github.com/100mango/SwiftNotificationCenter). <br>
 The logo is based on the "[Broadcast](https://thenounproject.com/term/broadcast/78458/)" icon by [Amy Chiang](https://thenounproject.com/amyc/) from [the Noun Project](http://thenounproject.com/).
