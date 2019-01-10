@@ -56,7 +56,7 @@ Shouter.default.unregister(SomeNotification.self, observer: vc)
 CocoaPods:
 
 ~~~
-pod 'Shouter', :git => 'https://github.com/ChaosCoder/Shouter.git'
+pod 'Shouter'
 ~~~
 
 ## Acknowledgments
