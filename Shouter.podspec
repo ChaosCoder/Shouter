@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Shouter"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "A type safe, thread safe and memory safe alternative for NotificationCenter"
   s.homepage     = "https://github.com/ChaosCoder/Shouter"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }

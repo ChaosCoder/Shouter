@@ -8,15 +8,7 @@
 
 import Foundation
 
-public protocol NotificationRegistry {
-    func register<T>(_ type: T.Type, observer: T)
-    func unregister<T>(_ type: T.Type, observer: T)
-    func unregister<T>(_ type: T.Type)
-    
-    func notify<T>(_ type: T.Type, block: (T) -> Void)
-}
-
-public class Shouter: NotificationRegistry {
+public class Shouter {
     
     public static let `default` = Shouter()
     
