@@ -8,7 +8,14 @@
 
 import Foundation
 
-public class Shouter {
+public protocol ShouterType {
+    func register<T>(_ type: T.Type, observer: T)
+    func unregister<T>(_ type: T.Type, observer: T)
+    func unregister<T>(_ type: T.Type)
+    func notify<T>(_ type: T.Type, block: (T) -> Void)
+}
+
+public class Shouter: ShouterType {
     
     public static let `default` = Shouter()
     
