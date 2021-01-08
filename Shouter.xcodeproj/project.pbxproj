@@ -53,8 +53,7 @@
 		DB7989811CDB2C8A00419114 = {
 			isa = PBXGroup;
 			children = (
-				DB79898D1CDB2C8A00419114 /* Shouter */,
-				DB7989991CDB2C8A00419114 /* ShouterTests */,
+				E53EAE8525A8B177002D3CB6 /* Sources */,
 				DB79898C1CDB2C8A00419114 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +83,15 @@
 				DB79899C1CDB2C8A00419114 /* Info.plist */,
 			);
 			path = ShouterTests;
+			sourceTree = "<group>";
+		};
+		E53EAE8525A8B177002D3CB6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DB79898D1CDB2C8A00419114 /* Shouter */,
+				DB7989991CDB2C8A00419114 /* ShouterTests */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +349,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Shouter/Info.plist;
+				INFOPLIST_FILE = Sources/Shouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 0.4.0;
@@ -363,7 +371,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Shouter/Info.plist;
+				INFOPLIST_FILE = Sources/Shouter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MARKETING_VERSION = 0.4.0;
@@ -381,7 +389,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ShouterTests/Info.plist;
+				INFOPLIST_FILE = Sources/ShouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.chaosspace.ShouterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,7 +405,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ShouterTests/Info.plist;
+				INFOPLIST_FILE = Sources/ShouterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.chaosspace.ShouterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
