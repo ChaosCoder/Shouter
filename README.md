@@ -59,6 +59,12 @@ CocoaPods:
 pod 'Shouter'
 ~~~
 
+Swift Package Manager:
+
+```swift
+.package(url: "https://github.com/ChaosCoder/Shouter.git", from: "0.5.0")
+```
+
 ## Acknowledgments
 
 *Shouter* was inspired and partially based on the library [100mango/SwiftNotificationCenter](https://github.com/100mango/SwiftNotificationCenter). <br>
