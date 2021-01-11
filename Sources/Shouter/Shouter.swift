@@ -8,13 +8,24 @@
 
 import Foundation
 
-public class Shouter {
+public protocol ShouterType {
+    func register<T>(_ type: T.Type, observer: T)
+    func unregister<T>(_ type: T.Type, observer: T)
+    func unregister<T>(_ type: T.Type)
+    func notify<T>(_ type: T.Type, block: (T) -> Void)
+}
+
+public class Shouter: ShouterType {
     
     public static let `default` = Shouter()
     
     fileprivate typealias Key = String
     fileprivate var observers: [Key: NSHashTable<AnyObject>] = [:]
-    fileprivate let notificationQueue = DispatchQueue(label: "com.swift.notification.center.dispatch.queue", attributes: .concurrent)
+    fileprivate let notificationQueue: DispatchQueue
+    
+    public init(notificationQueue: DispatchQueue = DispatchQueue(label: "de.chaosspace.Shouter.dispatch.queue", attributes: .concurrent)) {
+        self.notificationQueue = notificationQueue
+    }
     
     public func register<T>(_ type: T.Type, observer: T) {
         notificationQueue.sync(flags: .barrier) {
